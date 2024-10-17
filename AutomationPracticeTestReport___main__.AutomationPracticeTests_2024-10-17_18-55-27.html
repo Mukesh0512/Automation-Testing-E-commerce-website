@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Practice Test Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Practice Test Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2024-10-17 18:55:27</p>
+                <p class='attribute'><strong>Duration: </strong>554 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 0, Error: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.AutomationPracticeTests</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_1_functional_test</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="search_query_top"]"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\MUKESH\Desktop\Automation_Tests\test_cases.py", line 24, in test_1_functional_test
+    search_box = driver.find_element(By.ID, "search_query_top")
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="search_query_top"]"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_login_test</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\MUKESH\Desktop\Automation_Tests\test_cases.py", line 59, in test_2_login_test
+    driver.find_element(By.CLASS_NAME, "login").click()
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_3_ui_test</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="search_query_top"]"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\MUKESH\Desktop\Automation_Tests\test_cases.py", line 97, in test_3_ui_test
+    search_bar = driver.find_element(By.ID, "search_query_top")
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="search_query_top"]"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_4_form_validation_test</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\MUKESH\Desktop\Automation_Tests\test_cases.py", line 113, in test_4_form_validation_test
+    driver.find_element(By.CLASS_NAME, "login").click()
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\MUKESH\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
+  (Session info: chrome=130.0.6723.59); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF70353E1F5+2972373]
+	(No symbol) [0x00007FF7031D55F0]
+	(No symbol) [0x00007FF7030757FA]
+	(No symbol) [0x00007FF7030C5A3E]
+	(No symbol) [0x00007FF7030C5D2C]
+	(No symbol) [0x00007FF70310EAB7]
+	(No symbol) [0x00007FF7030EBABF]
+	(No symbol) [0x00007FF70310B8CC]
+	(No symbol) [0x00007FF7030EB823]
+	(No symbol) [0x00007FF7030B75E8]
+	(No symbol) [0x00007FF7030B8751]
+	GetHandleVerifier [0x00007FF7035647BD+3129501]
+	GetHandleVerifier [0x00007FF7035B4D00+3458528]
+	GetHandleVerifier [0x00007FF7035AB05D+3418429]
+	GetHandleVerifier [0x00007FF70333687B+844123]
+	(No symbol) [0x00007FF7031E0AFF]
+	(No symbol) [0x00007FF7031DC6D4]
+	(No symbol) [0x00007FF7031DC86D]
+	(No symbol) [0x00007FF7031CBD79]
+	BaseThreadInitThunk [0x00007FFE7025257D+29]
+	RtlUserThreadStart [0x00007FFE71E8AF08+40]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 0, Error: 4 -- Duration: 554 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
